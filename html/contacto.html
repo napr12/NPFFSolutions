@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/logoColor.png" alt="logo" width="100px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="soluciones.html">Soluciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Contacto</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                <form action="">
+                    <label for="name">Nombre</label>
+                    <input type="text" placeholder="Nombre" id="name">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Email" id="email">
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" placeholder="Teléfono" id="phone">
+                    
+                    <div class="company-contact">
+                        <label for="company">Medio de contacto</label>
+                        <input type="radio" name="company" id="companyPhone" group="company">
+                        <label for="companyPhone">Telefono</label>
+                        <input type="radio" name="company" id="companyEmail" group ="company">
+                        <label for="companyEmail">Correo</label>
+                    </div>
+                    <label for="type">Tipo de consulta</label>
+                    <select name="type" id="type">
+                        <option value="1">Soporte Técnico</option>
+                        <option value="2">Desarrollo Web</option>
+                        <option value="3">Sistemas Personalizados</option>
+                        <option value="4">Otros</option>
+                    </select>
+                    <label for="subject">Asunto</label>
+                    <input type="text" placeholder="Asunto" id="subject">
+                    <label for="message">Mensaje</label>
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h2>Contacto</h2>
+                <p>Mail: mail@gmail.com</p>
+                <p>+598-95592209</p>
+            </div>
+            <div class="footer-section">
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100093181407003">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/profile.php?id=100093181407003">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/profile.php?id=100093181407003">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
