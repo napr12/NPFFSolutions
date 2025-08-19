@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Sansation', sans-serif;
+    background-color: #ffffff;
 }
 
 /* Header */
@@ -69,23 +70,97 @@ nav ul li a:hover {
 
 
 .hero{
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     align-items: center;
+    justify-items: center;
     justify-content: center;
-    height: 380px;
+    grid-template-rows: 400PX;
     background-color: #E0E4EB;
+    overflow: hidden;
+    padding-left:50px;
 }
 .hero-image {
-    height: 100%;
+    position: relative;
+    width: 100%;
     background-color:#fff ;
 }
 .hero-image img {
-    width: 380px;
+    height:400px;
 }
-.products-content{
+.products{
     display: grid;
-    grid-row: 2fr;
-    grid-column: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "title"
+                         "cards";
+ 
+}
+.products h2 {
+    grid-area: "title";
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+.products-content {
+    grid-area: "cards";
+    display: flex;
+    justify-content: space-around;
+}
+.product-card{
+    background-color: #fff;
+    border-style: solid;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.services {
+    display: grid;
+    grid-template-areas: 
+        "title-service title-service title-service"
+        "web systems support";
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: space-around;
+    align-items: center;
+
+}
+.services h2 {
+    grid-area: "title-service";
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 20px 50px;
+
+}
+.web {
+    grid-area: "web";
+}
+.systems {
+    grid-area: "systems";
+}
+.support {
+    grid-area: "support";
+}
+.service-card {
+    background-color: #fff;
+    border-style: solid;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.service-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 .clients div img {
     width: 25%;
