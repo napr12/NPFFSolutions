@@ -1,0 +1,105 @@
+.index{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "txt img";
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding-left: 50px;
+    &-content{
+        grid-area: txt;
+    }
+    &-image{
+        grid-area: img;
+        height: 100%;
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+}
+.product{
+    margin: 50px 50px 0px 10px;
+    h2{
+        text-align: left;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    &-content{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    &-card{
+        background-color: #fff;
+        border-style: solid;
+        width: 350px;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+}
+.service{
+    @extend .product;
+    display: grid;
+    grid-template-areas: "service service service"
+                         "support web systems";
+    justify-self: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+    h2{
+        grid-area: service;
+        text-align: left;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+    .web{
+        grid-area: web;
+    }
+    .systems{
+        grid-area: systems;
+    }
+    .support{
+        grid-area: support;
+    }
+    &-card{
+        @extend .product-card;
+        img{
+            width: 100%;
+        }
+
+    }
+
+}
+@media (max-width: 579px) {
+    .index{
+        &-image{
+            display: flex;
+            align-items: center;
+        }
+        .btn{
+            margin-bottom: 10px;
+        }
+    }
+    .service{
+        grid-template-areas: "service"
+                             "support"
+                             "web"
+                             "systems";
+    }
+}
+@media (min-width: 580px) and (max-width: 767px) {
+    .index{
+        grid-template-columns: 1fr 1fr;
+        .btn{
+            margin-bottom: 10px;
+        }
+    }
+    .service{
+        grid-template-areas: "service service"
+                             "support web"
+                             "systems .";
+    }
+}

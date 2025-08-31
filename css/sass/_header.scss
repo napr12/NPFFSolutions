@@ -17,11 +17,12 @@ header {
     &list{
         display: flex;
         justify-content: end;
+        align-items: center;
         width: 100%;
         a{
             margin-left: 20px;
             font-weight: 500;
-            color: black;
+            color: #569CDA;
             text-decoration: none;
             &:hover{
                 color: grey;

@@ -26,12 +26,13 @@ header img {
 .header-list {
   display: flex;
   justify-content: end;
+  align-items: center;
   width: 100%;
 }
 .header-list a {
   margin-left: 20px;
   font-weight: 500;
-  color: black;
+  color: #569CDA;
   text-decoration: none;
 }
 .header-list a:hover {
@@ -48,6 +49,140 @@ header img {
     justify-content: center;
   }
 }
+.index {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "txt img";
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  padding-left: 50px;
+}
+.index-content {
+  grid-area: txt;
+}
+.index-image {
+  grid-area: img;
+  height: 100%;
+  width: 100%;
+}
+.index-image img {
+  width: 100%;
+}
+
+.product, .service {
+  margin: 50px 50px 0px 10px;
+}
+.product h2, .service h2 {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.product-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.product-card, .service-card {
+  background-color: #fff;
+  border-style: solid;
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.service {
+  display: grid;
+  grid-template-areas: "service service service" "support web systems";
+  justify-self: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.service h2 {
+  grid-area: service;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.service .web {
+  grid-area: web;
+}
+.service .systems {
+  grid-area: systems;
+}
+.service .support {
+  grid-area: support;
+}
+.service-card img {
+  width: 100%;
+}
+
+@media (max-width: 579px) {
+  .index-image {
+    display: flex;
+    align-items: center;
+  }
+  .index .btn {
+    margin-bottom: 10px;
+  }
+  .service {
+    grid-template-areas: "service" "support" "web" "systems";
+  }
+}
+@media (min-width: 580px) and (max-width: 767px) {
+  .index {
+    grid-template-columns: 1fr 1fr;
+  }
+  .index .btn {
+    margin-bottom: 10px;
+  }
+  .service {
+    grid-template-areas: "service service" "support web" "systems .";
+  }
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 10px;
+}
+.footer-section h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.footer-section p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.footer-section ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.footer-section ul li {
+  margin-right: 20 px;
+}
+.footer-section ul li a {
+  text-decoration: none;
+  color: #569CDA;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.footer-section ul li a:hover {
+  color: #000;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
 * {
   margin: 0;
   padding: 0;
