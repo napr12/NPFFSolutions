@@ -1,0 +1,20 @@
+@import "variables";
+.product{
+    &-content{
+        display: flex;
+        flex-direction: column;
+    }
+    &-description{
+        width: 100%;
+        border: 5px solid #E0E4EB;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        h2{
+            margin-right: 100%;
+        }
+        img{
+            width: 350px;
+        }
+    }
+}

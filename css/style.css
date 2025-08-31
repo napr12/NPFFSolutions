@@ -87,16 +87,20 @@ header img {
 .product-card, .service-card {
   background-color: #fff;
   border-style: solid;
-  width: 350px;
+  width: 300px;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .service {
   display: grid;
   grid-template-areas: "service service service" "support web systems";
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-rows: 2rem 1fr;
   justify-self: space-around;
+  align-content: center;
   align-items: center;
   margin-bottom: 50px;
 }
@@ -116,6 +120,10 @@ header img {
 .service .support {
   grid-area: support;
 }
+.service-card {
+  height: 450px;
+  width: 250px;
+}
 .service-card img {
   width: 100%;
 }
@@ -129,7 +137,13 @@ header img {
     margin-bottom: 10px;
   }
   .service {
-    grid-template-areas: "service" "support" "web" "systems";
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "service service service" "support support support" "web web web" "systems systems systems";
+  }
+  .service-card {
+    width: 190px;
   }
 }
 @media (min-width: 580px) and (max-width: 767px) {
@@ -139,10 +153,36 @@ header img {
   .index .btn {
     margin-bottom: 10px;
   }
-  .service {
-    grid-template-areas: "service service" "support web" "systems .";
+  .service-card {
+    width: 200px;
   }
 }
+.bg-custom-primary {
+  background-color: #ffffff;
+}
+
+.bg-custom-secondary {
+  background-color: #E0E4EB;
+}
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+}
+.product-description {
+  width: 100%;
+  border: 5px solid #E0E4EB;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.product-description h2 {
+  margin-right: 100%;
+}
+.product-description img {
+  width: 350px;
+}
+
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -176,6 +216,7 @@ header img {
   color: #569CDA;
   font-weight: 700;
   font-size: 1.2rem;
+  margin-right: 10px;
 }
 .footer-section ul li a:hover {
   color: #000;

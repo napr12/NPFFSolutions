@@ -34,10 +34,11 @@
     &-card{
         background-color: #fff;
         border-style: solid;
-        width: 350px;
+        width: 300px;
         padding: 20px;
         border-radius: 10px;
         text-align: center;
+        margin-bottom: 10px;
     }
 }
 .service{
@@ -45,7 +46,10 @@
     display: grid;
     grid-template-areas: "service service service"
                          "support web systems";
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 2rem 1fr;
     justify-self: space-around;
+    align-content: center;
     align-items: center;
     margin-bottom: 50px;
     h2{
@@ -66,6 +70,8 @@
     }
     &-card{
         @extend .product-card;
+        height: 450px;
+        width: 250px;
         img{
             width: 100%;
         }
@@ -84,10 +90,16 @@
         }
     }
     .service{
-        grid-template-areas: "service"
-                             "support"
-                             "web"
-                             "systems";
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas: "service service service"
+                             "support support support"
+                             "web web web"
+                             "systems systems systems";
+        &-card{
+            width: 190px;
+        }
     }
 }
 @media (min-width: 580px) and (max-width: 767px) {
@@ -97,9 +109,7 @@
             margin-bottom: 10px;
         }
     }
-    .service{
-        grid-template-areas: "service service"
-                             "support web"
-                             "systems .";
+    .service-card{
+        width: 200px;
     }
 }
