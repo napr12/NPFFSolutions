@@ -5,6 +5,11 @@ header {
     top: 0px;
     img{
         width: 100px;
+        animation-name: logoAnimation;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
     }
 }
 .header-{
@@ -42,4 +47,13 @@ header {
         align-items: center;
         justify-content: center;
     }
+}
+
+@keyframes logoAnimation {
+    0% {
+         transform: translateY(0) translateX(0); 
+        }
+    100% {
+         transform: translateY(-20px) translateX(20px);
+        }
 }

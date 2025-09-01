@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     justify-items: center;
+    align-content: justify;
     padding-left: 50px;
     &-content{
         grid-area: txt;
@@ -51,6 +52,7 @@
     justify-self: space-around;
     align-content: center;
     align-items: center;
+    justify-items: center;
     margin-bottom: 50px;
     h2{
         grid-area: service;

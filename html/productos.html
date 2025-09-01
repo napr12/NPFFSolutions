@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -15,12 +16,14 @@
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid header-container">
                 <div class="logo">
-                    <a class="navbar-brand" href="../index.html"><img src="../img/logoColor.png" alt="logo" width="100px"></a> 
+                    <a class="navbar-brand" href="../index.html"><img src="../img/logoColor.png" alt="logo"
+                            width="100px"></a>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse header-list" id="navbarNav">  
+                <div class="collapse navbar-collapse header-list" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
@@ -33,28 +36,39 @@
         </nav>
     </header>
     <main class="bg-custom-primary">
-        <section class="product">
+        <section class="products">
             <h1>Productos</h1>
-            <div class="product-content">
-                <div class="product-description">
-                    <h2>Portátiles</h2>
-                    <img src="../img/imageProvisoria.png" alt="portatil" width="100%">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            <div class="products-content">
+                <div class="products-description portatil">
+                    <h2 class="portatil-h2">Portátiles</h2>
+                    <img class="portatil-img" src="../img/notebook.png" alt="portatil" width="100%">
+                    <p class="portatil-p">Las notebooks se han convertido en herramientas esenciales tanto para el
+                        trabajo como para el entretenimiento. Su diseño compacto y portátil permite llevar la
+                        productividad a cualquier lugar, sin sacrificar rendimiento ni funcionalidad.<br>
+                        Ya sea que busques una laptop para tareas cotidianas, diseño gráfico, programación o gaming,
+                        contamos con una amplia variedad de modelos que se adaptan a cada perfil de usuario.
+                    </p>
                 </div>
-                <div class="product-description">
-                    <h2>Componentes</h2>                    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                    <img src="../img/imageProvisoria.png" alt="componentes" width="100%">
+                <div class="products-description component">
+                    <h2 class="component-h2">Componentes</h2>
+                    <p class="component-p">Los componentes son el corazón de cualquier equipo informático. Elegir las
+                        piezas adecuadas no solo garantiza un funcionamiento óptimo, sino que también permite
+                        personalizar el rendimiento según tus necesidades específicas: desde tareas básicas hasta
+                        exigentes procesos de edición, desarrollo o gaming.<br>
+                        En nuestra tienda encontrarás una selección cuidadosamente curada de componentes de alta
+                        calidad, pensados para ensamblar, actualizar o potenciar tu PC.
+                    </p>
+                    <img class="component-img" src="../img/component.png" alt="componentes" width="100%">
                 </div>
-                <div class="product-description">
-                    <h2>Periféricos</h2>
-                    <img src="../img/imageProvisoria.png " alt="perifericos" width="100%">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                <div class="products-description externals">
+                    <h2 class="externals-h2">Periféricos</h2>
+                    <img class="externals-img" src="../img/externals.png " alt="perifericos" width="100%">
+                    <p class="externals-p">Los periféricos son los aliados clave para potenciar la interacción entre el usuario y su equipo. Desde herramientas de entrada hasta dispositivos de salida y comunicación, cada periférico cumple una función específica que mejora la productividad, el confort y el rendimiento general del sistema.</p>
                 </div>
-                <div class="product-description">
-                    <h2>Redes</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                    <img src="../img/imageProvisoria.png" alt="redes" width="100%">
+                <div class="products-description net">
+                    <h2 class="net-h2">Redes</h2>
+                    <p class="net-p">En un mundo cada vez más interconectado, contar con una infraestructura de red sólida es esencial para garantizar la comunicación fluida entre dispositivos, sistemas y usuarios. Las soluciones de red permiten compartir recursos, acceder a servicios digitales y mantener la productividad en movimiento, tanto en entornos domésticos como empresariales.</p>
+                    <img class="net-img" src="../img/net.png" alt="redes" width="100%">
                 </div>
             </div>
 
@@ -69,14 +83,19 @@
             </div>
             <div class="footer-section">
                 <ul>
-                    <li><a href="https://www.facebook.com/profile.php?id=100093181407003"><i class="bi bi-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/profile.php?id=100093181407003"><i class="bi bi-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/profile.php?id=100093181407003"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100093181407003"><i
+                                class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/profile.php?id=100093181407003"><i
+                                class="bi bi-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/profile.php?id=100093181407003"><i
+                                class="bi bi-linkedin"></i></a></li>
                 </ul>
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

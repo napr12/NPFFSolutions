@@ -15,6 +15,11 @@ header {
 }
 header img {
   width: 100px;
+  animation-name: logoAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .header-container {
@@ -49,6 +54,14 @@ header img {
     justify-content: center;
   }
 }
+@keyframes logoAnimation {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(-20px) translateX(20px);
+  }
+}
 .index {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -56,6 +69,7 @@ header img {
   align-items: center;
   justify-content: center;
   justify-items: center;
+  align-content: justify;
   padding-left: 50px;
 }
 .index-content {
@@ -102,6 +116,7 @@ header img {
   justify-self: space-around;
   align-content: center;
   align-items: center;
+  justify-items: center;
   margin-bottom: 50px;
 }
 .service h2 {
@@ -157,32 +172,133 @@ header img {
     width: 200px;
   }
 }
-.bg-custom-primary {
-  background-color: #ffffff;
-}
-
-.bg-custom-secondary {
-  background-color: #E0E4EB;
-}
-
-.product-content {
-  display: flex;
-  flex-direction: column;
-}
-.product-description {
-  width: 100%;
-  border: 5px solid #E0E4EB;
+.products-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
-.product-description h2 {
-  margin-right: 100%;
-}
-.product-description img {
-  width: 350px;
+.products-description {
+  width: 100%;
+  border: 5px solid #E0E4EB;
+  margin: 0px 10px;
 }
 
+.portatil, .net, .externals, .component {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  margin-bottom: 10px;
+  grid-template-areas: "titlePortatil ." "imgPortatil infoPortatil";
+  justify-items: center;
+}
+.portatil-h2 {
+  text-align: left;
+  grid-area: titlePortatil;
+}
+.portatil-img, .net-img, .externals-img, .component-img {
+  grid-area: imgPortatil;
+  justify-self: center;
+  align-self: center;
+  margin: 10px;
+  width: 350px;
+}
+.portatil-p, .net-p, .externals-p, .component-p {
+  grid-area: infoPortatil;
+  padding: 20px;
+  font-size: 18px;
+  text-align: justify;
+  align-self: center;
+}
+
+.component {
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "titleComponent ." "infoComponent imgComponent";
+}
+.component-h2 {
+  grid-area: titleComponent;
+}
+.component-img {
+  grid-area: imgComponent;
+}
+.component-p {
+  grid-area: infoComponent;
+}
+
+.externals {
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "titleExternals ." "imgExternals infoExternals";
+}
+.externals-h2 {
+  grid-area: titleExternals;
+}
+.externals-img {
+  grid-area: imgExternals;
+}
+.externals-p {
+  grid-area: infoExternals;
+}
+
+.net {
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "titleNet ." "infoNet imgNet";
+}
+.net-h2 {
+  grid-area: titleNet;
+}
+.net-img {
+  grid-area: imgNet;
+}
+.net-p {
+  grid-area: infoNet;
+}
+
+@media (max-width: 579px) {
+  .portatil, .component, .externals, .net {
+    grid-template-columns: 1fr;
+    grid-template-areas: "titlePortatil" "imgPortatil" "infoPortatil";
+  }
+  .component {
+    grid-template-columns: 1fr;
+    grid-template-areas: "titleComponent" "imgComponent" "infoComponent";
+  }
+  .externals {
+    grid-template-columns: 1fr;
+    grid-template-areas: "titleExternals" "imgExternals" "infoExternals";
+  }
+  .net {
+    grid-template-columns: 1fr;
+    grid-template-areas: "titleNet" "imgNet" "infoNet";
+  }
+}
+@media (min-width: 580px) and (max-width: 767px) {
+  .portatil, .component, .externals, .net {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "titlePortatil." "imgPortatil infoPortatil";
+  }
+  .portatil-img, .component-img, .externals-img, .net-img {
+    width: 250px;
+  }
+  .component {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "titleComponent." "infoComponent imgComponent";
+  }
+  .component-img {
+    width: 250px;
+  }
+  .externals {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "titleExternals." "imgExternals infoExternals";
+  }
+  .externals-img {
+    width: 250px;
+  }
+  .net {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "titleNet ." "infoNet imgNet";
+  }
+  .net-img {
+    width: 250px;
+  }
+}
 .footer-content {
   display: flex;
   justify-content: space-between;
