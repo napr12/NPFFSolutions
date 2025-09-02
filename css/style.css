@@ -299,6 +299,94 @@ header img {
     width: 250px;
   }
 }
+.solution-content {
+  display: grid;
+  grid-template-areas: ". title ." "solutionweb solutionsistem solutionsupport";
+  grid-template-columns: 2fr 2fr 2fr;
+}
+.solution-title {
+  grid-area: title;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+.solution-card {
+  background-color: #f5f5f5;
+  border: 1px solid #000;
+  padding: 20px;
+  margin: 10px;
+}
+.solution-card h2 {
+  text-align: center;
+}
+.solution-card p {
+  margin-top: 10px;
+  font: 1em;
+}
+.solution .develop-web {
+  grid-area: solutionweb;
+}
+.solution .systems-custom {
+  grid-area: solutionsistem;
+}
+.solution .support {
+  grid-area: solutionsupport;
+}
+
+.client {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: ". . titleClient . ." "img1 img2 img3 img4 img5";
+  justify-content: center;
+  align-items: center;
+}
+.client img {
+  width: 150px;
+  margin: 2.5px;
+}
+.client h2 {
+  grid-area: titleClient;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+.client .img1 {
+  grid-area: img1;
+}
+.client .img2 {
+  grid-area: img2;
+}
+.client .img3 {
+  grid-area: img3;
+}
+.client .img4 {
+  grid-area: img4;
+}
+.client .img5 {
+  grid-area: img5;
+}
+
+@media (max-width: 767px) {
+  .solution-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .solution-card {
+    width: 80%;
+  }
+  .client {
+    grid-template-areas: "titleClient" "img1" "img2" "img3" "img4" "img5";
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .client img {
+    width: 100px;
+  }
+}
 .footer-content {
   display: flex;
   justify-content: space-between;
