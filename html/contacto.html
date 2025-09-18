@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Contacto</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | NPFF-Solutions - Conectá con Expertos en Desarrollo Web</title>
+    <meta name="description" content="¿Tenés un proyecto en mente? Contactá a NPFF-Solutions para soluciones digitales personalizadas: diseño web, branding, SEO y más. Estamos listos para ayudarte.">
+    <meta name="keywords" content="contacto NPFF-Solutions, desarrollo web, branding, diseño responsivo, consultoría digital, formulario de contacto, soluciones tecnológicas">
+    <meta name="author" content="Nahuel - NPFF-Solutions">
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body class="bg-custom-primary">
     <header class="bg-custom-secondary">
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid header-container">
                 <div class="logo">
-                    <a class="navbar-brand" href="../index.html"><img src="../img/logoColor.png" alt="logo" width="100px"></a> 
+                    <a class="navbar-brand" href="../index.html"><img src="../img/logoColor.png" alt="logo"
+                            width="100px"></a>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse header-list" id="navbarNav">  
+                <div class="collapse navbar-collapse header-list" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
@@ -34,34 +43,46 @@
         <section class="contact">
             <div class="contact-content">
                 <h1>Contacto</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                <p>En NPFF-Solutions estamos siempre listos para escuchar tus ideas, responder tus consultas y ayudarte
+                    a llevar tu marca al siguiente nivel. Completá el formulario y nos pondremos en contacto a la
+                    brevedad. ¡Tu mensaje es el primer paso hacia algo grande!</p>
                 <form action="">
-                    <label for="name">Nombre</label>
-                    <input type="text" placeholder="Nombre" id="name">
-                    <label for="email">Email</label>
-                    <input type="email" placeholder="Email" id="email">
-                    <label for="phone">Teléfono</label>
-                    <input type="tel" placeholder="Teléfono" id="phone">
-                    
+                    <label class="form-label" for="name">Nombre</label>
+                    <input class="form-control" type="text" placeholder="Nombre" id="name">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-control" type="email" placeholder="Email" id="email">
+                    <label class="form-label" for="phone">Teléfono</label>
+                    <input class="form-control" type="tel" placeholder="Teléfono" id="phone">
+
                     <div class="company-contact">
-                        <label for="company">Medio de contacto</label>
-                        <input type="radio" name="company" id="companyPhone" group="company">
-                        <label for="companyPhone">Telefono</label>
-                        <input type="radio" name="company" id="companyEmail" group ="company">
-                        <label for="companyEmail">Correo</label>
+                        <label class="form-label" for="company">Medio de contacto</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="company" id="companyPhone"
+                                group="company">
+                            <label class="form-check-label" for="companyPhone">Telefono</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="company" id="companyEmail"
+                                group="company">
+                            <label class="form-check-label" for="companyEmail">Correo</label>
+                        </div>
+
                     </div>
-                    <label for="type">Tipo de consulta</label>
-                    <select name="type" id="type">
+                    <label class="form-label" for="type">Tipo de consulta</label>
+                    <select class="form-select" name="type" id="type">
+                        <option value="0">Seleccione</option>
                         <option value="1">Soporte Técnico</option>
                         <option value="2">Desarrollo Web</option>
                         <option value="3">Sistemas Personalizados</option>
                         <option value="4">Otros</option>
                     </select>
-                    <label for="subject">Asunto</label>
-                    <input type="text" placeholder="Asunto" id="subject">
-                    <label for="message">Mensaje</label>
-                    <textarea name="" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button type="submit">Enviar</button>
+                    <label class="form-label" for="subject">Asunto</label>
+                    <input class="form-control" type="text" placeholder="Asunto" id="subject">
+                    <label class="form-label" for="message">Mensaje</label>
+                    <textarea class="form-control" name="" id="message" cols="30" rows="10"
+                        placeholder="Mensaje"></textarea>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
             </div>
         </section>
@@ -75,13 +96,19 @@
             </div>
             <div class="footer-section">
                 <ul>
-                    <li><a href="https://www.facebook.com/profile.php?id=100093181407003"><i class="bi bi-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/profile.php?id=100093181407003"><i class="bi bi-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/profile.php?id=100093181407003"><i class="bi bi-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100093181407003"><i
+                                class="bi bi-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/profile.php?id=100093181407003"><i
+                                class="bi bi-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/profile.php?id=100093181407003"><i
+                                class="bi bi-linkedin"></i></a></li>
                 </ul>
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
